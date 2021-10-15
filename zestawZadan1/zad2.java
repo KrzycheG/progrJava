@@ -45,8 +45,21 @@ public class zad2 {
             }
         }
         return -1;
+    }
 
+    public static String placeRe(String str, char charToReplace, char charToPlace){
 
+        char [] strArray = str.toCharArray();
+
+        for (int i = 0; i<strArray.length ; i++){
+
+            if(strArray[i] == charToReplace){
+                strArray[i] = charToPlace;
+            }
+
+        }
+        String result = new String(strArray);
+        return result;
     }
 
 
@@ -62,7 +75,7 @@ public class zad2 {
         String b = "abdcsdasdadaab";
         System.out.println(ofIndex(b,a));
         */
-
+        System.out.println(placeRe("aaabbbccc",'a','b'));
 
     }
 
