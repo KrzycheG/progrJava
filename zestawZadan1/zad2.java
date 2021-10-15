@@ -1,29 +1,47 @@
-package zestawZadan1;
 
+package zestawZadan1;
+import java.lang.*;
+import java.math.*;
 
 public class zad2 {
 
     public static int compareStr(String str1, String str2){
+        int a = str1.charAt(0);
+        int b = str2.charAt(0);
+        return a-b;
 
-        if(str1 == str2){
-            return 0;
-        }
-        else if (str1.length()> str2.length()){
-            return 1;
+    }
+    public static boolean endIs(String suffix, char ch){
+        //endsWith
+        int howLong = suffix.length();
+
+        if(suffix.charAt(howLong-1) == ch){
+            return true;
         }
         else{
-            return -1;
-
+            return false;
         }
+
+
     }
+
 
     public static void main(String args[]){
 
+        /*//CompareTo************************
+        System.out.println(compareStr("Marcin","Andrzej"));
+        //endsWith**************************
+        System.out.println(endIs("abcd", 'd'));
+        */
+        int x = 5;
+        String baba = "dasdasdasd";
+        String babe = "sdsd";
 
-        String A = " omggmg";
-        String B = " mmbggm";
+        System.out.println(baba.compareTo(babe));
+        System.out.println(compareStr(baba,babe));
 
-        System.out.println(compareStr(A,B));
+
+
 
     }
 
