@@ -20,13 +20,12 @@ public class zad3 {
         }
 
         String result = new String(table1);
-        String subString = result.substring(0,result.indexOf('\0'));
 
-        return subString;
+        return result.substring(0,result.indexOf('\0'));
 
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         System.out.println(simplify("aaabbbbbbbaaaccd"));
     }

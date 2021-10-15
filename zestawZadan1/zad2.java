@@ -1,7 +1,7 @@
 
 package zestawZadan1;
 import java.lang.*;
-import java.math.*;
+
 
 public class zad2 {
 
@@ -58,8 +58,7 @@ public class zad2 {
             }
 
         }
-        String result = new String(strArray);
-        return result;
+        return new String(strArray);
     }
 
     public static String stringSub(String str, int beginIndex)
@@ -73,27 +72,26 @@ public class zad2 {
             j++;
         }
 
-        String result = new String(Storage);
-        return result;
+        return new String(Storage);
     }
 
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         //******************CompareTo*************************
-        //System.out.println(compareStr("Marcin","Andrzej"));
+        System.out.println(compareStr("Marcin","Andrzej"));
         //******************endsWith**************************
-        //System.out.println(endIs("abcd", 'd'));
-        /*
+        System.out.println(endIs("abcd", 'd'));
+
         //******************IndexOF***************************
         String a = "abc";
         String b = "abdcsdasdadaab";
         System.out.println(ofIndex(b,a));
-        */
+
         //******************Replace***************************
-        //System.out.println(placeRe("aaabbbccc",'a','b'));
+        System.out.println(placeRe("aaabbbccc",'a','b'));
         //******************substring*************************
-        //System.out.println(stringSub("alaMaKota",4));
+        System.out.println(stringSub("alaMaKota",4));
     }
 
  }
