@@ -10,8 +10,8 @@ public class zad4 {
 
            if((byte) table[i] < 97 ){
 
-            byte b = (byte) (table[i]+ a);
-            table[i] = (char) b;
+
+            table[i] = (char) (table[i]+ a);
 
            }
 
@@ -29,8 +29,8 @@ public class zad4 {
 
             if((byte) table[i] > 97 ){
 
-                byte b = (byte) (table[i]- a);
-                table[i] = (char) b;
+
+                table[i] = (char) (table[i]- a);
 
             }
 
