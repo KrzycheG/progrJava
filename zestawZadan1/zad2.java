@@ -52,15 +52,16 @@ public class zad2 {
 
     public static void main(String args[]){
 
-        /*//CompareTo*************************
-        System.out.println(compareStr("Marcin","Andrzej"));
+        //CompareTo*************************
+        //System.out.println(compareStr("Marcin","Andrzej"));
         //endsWith**************************
-        System.out.println(endIs("abcd", 'd'));
-        */
+        //System.out.println(endIs("abcd", 'd'));
+        /*
         //IndexOF***************************
         String a = "abc";
         String b = "abdcsdasdadaab";
         System.out.println(ofIndex(b,a));
+        */
 
 
     }
