@@ -62,21 +62,38 @@ public class zad2 {
         return result;
     }
 
+    public static String stringSub(String str, int beginIndex)
+    {
+        char[] Storage = new char[str.length()-beginIndex];
+        char[] Storage2 = str.toCharArray();
+        int j = 0;
+        for (int i = beginIndex; i<Storage2.length; i++){
+
+            Storage[j] = Storage2[i];
+            j++;
+        }
+
+        String result = new String(Storage);
+        return result;
+    }
+
 
     public static void main(String args[]){
 
-        //CompareTo*************************
+        //******************CompareTo*************************
         //System.out.println(compareStr("Marcin","Andrzej"));
-        //endsWith**************************
+        //******************endsWith**************************
         //System.out.println(endIs("abcd", 'd'));
         /*
-        //IndexOF***************************
+        //******************IndexOF***************************
         String a = "abc";
         String b = "abdcsdasdadaab";
         System.out.println(ofIndex(b,a));
         */
-        System.out.println(placeRe("aaabbbccc",'a','b'));
-
+        //******************Replace***************************
+        //System.out.println(placeRe("aaabbbccc",'a','b'));
+        //******************substring*************************
+        //System.out.println(stringSub("alaMaKota",4));
     }
 
  }
