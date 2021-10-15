@@ -24,11 +24,12 @@ public class zad2 {
     }
 
     public static int ofIndex(String str1, String subS){
-        int count = 0;
-        for(int i =0; i< str1.length(); i++){
 
+        for(int i =0; i< str1.length(); i++){
+            int count = 0;
             if(str1.charAt(i) == subS.charAt(0)){
                 for(int j = 0; j<subS.length();j++) {
+
                     if(subS.charAt(j)== str1.charAt(i)){
                         count ++;
                         i++;
@@ -44,23 +45,22 @@ public class zad2 {
             }
         }
         return -1;
+
+
     }
 
 
     public static void main(String args[]){
 
-        /*//CompareTo************************
+        /*//CompareTo*************************
         System.out.println(compareStr("Marcin","Andrzej"));
         //endsWith**************************
         System.out.println(endIs("abcd", 'd'));
         */
+        //IndexOF***************************
         String a = "abc";
-
-        String b = "bbbuyiabc";
-
+        String b = "abdcsdasdadaab";
         System.out.println(ofIndex(b,a));
-
-
 
 
     }
