@@ -21,8 +21,29 @@ public class zad2 {
         else{
             return false;
         }
+    }
 
+    public static int ofIndex(String str1, String subS){
+        int count = 0;
+        for(int i =0; i< str1.length(); i++){
 
+            if(str1.charAt(i) == subS.charAt(0)){
+                for(int j = 0; j<subS.length();j++) {
+                    if(subS.charAt(j)== str1.charAt(i)){
+                        count ++;
+                        i++;
+                        if(count == subS.length()){
+                            return i-subS.length();
+                        }
+                    }
+                    else{
+                        break;
+                    }
+
+                }
+            }
+        }
+        return -1;
     }
 
 
@@ -33,12 +54,11 @@ public class zad2 {
         //endsWith**************************
         System.out.println(endIs("abcd", 'd'));
         */
-        int x = 5;
-        String baba = "dasdasdasd";
-        String babe = "sdsd";
+        String a = "abc";
 
-        System.out.println(baba.compareTo(babe));
-        System.out.println(compareStr(baba,babe));
+        String b = "bbbuyiabc";
+
+        System.out.println(ofIndex(b,a));
 
 
 
