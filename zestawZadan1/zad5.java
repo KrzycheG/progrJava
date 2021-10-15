@@ -19,7 +19,7 @@ public class zad5 {
 
             if(Dif < 33){                 // Zejście poniżej ustalonego zakresu 33- 126
 
-                if( key1 > 33 ){          // zejscie poniżej zera w tabeli ASCII
+                if( key1 > 33 ){          // tu cos nie trybi
 
                     table[i] = (char) (126 -(Math.abs(Dif)+33));
 
