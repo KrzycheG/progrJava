@@ -1,6 +1,5 @@
 package zestawZadan1;
 
-import java.util.Locale;
 
 public class zad7 {
 
