@@ -8,7 +8,7 @@ public class zad7 {
 
 
         str = str.toLowerCase();
-        str = str.replaceAll("\\s","");  // usunięcie spacji w stringu dzięki czemu można sprawdzać całe zdania np "Was it a cat I saw"
+        str = str.replaceAll("\\s","");  /// usunięcie spacji w stringu dzięki czemu można sprawdzać całe zdania np "Was it a cat I saw"
         for(int i = 0 ; i<str.length() ; i++){
 
             if(str.length()== 1){
