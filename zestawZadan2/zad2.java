@@ -5,7 +5,7 @@ import java.util.Random;
 public class zad2 {
 
     /* Uzytkownik podaje długosc tablicy oraz element do policzenia.
-         
+
      */
 
     public static int randTab (int length, char ch){
