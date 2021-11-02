@@ -147,7 +147,7 @@ public class zad7 {
                    result[i][y]= zad4.zad4Class.round(doubles2[i][y],2);
                 }
                 else if(doubles2[i][y]== 0.0){
-                    result[i][y] = zad4.zad4Class.round(doubles1[i][y],2);;
+                    result[i][y] = zad4.zad4Class.round(doubles1[i][y],2);
                 }
                 else{
                     result[i][y] = zad4.zad4Class.round(doubles1[i][y]/doubles2[i][y],2);
