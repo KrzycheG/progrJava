@@ -48,10 +48,10 @@ public class Film implements Serializable{
 
     public void saveObj(Film film) {
 
-        String path = "C:\\Users\\kpstr\\OneDrive\\Desktop\\java\\myObjects.obj";
+        String path = "myObjects.obj";
 
         try {
-            FileOutputStream f = new FileOutputStream(new File(path.replace("\\", "/")));
+            FileOutputStream f = new FileOutputStream(new File(path));
             ObjectOutputStream o = new ObjectOutputStream(f);
             o.writeObject(film);
             o.close();

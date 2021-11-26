@@ -7,9 +7,9 @@ public class Main implements Serializable {
 
     public static void saveObjTab(Object[] obj) throws IOException{
 
-        String path = "C:\\Users\\kpstr\\OneDrive\\Desktop\\java\\myObjectsTab.obj";
+        String path = "myObjectsTab.obj";
 
-        FileOutputStream fi = new FileOutputStream(new File(path.replace("\\","/")));
+        FileOutputStream fi = new FileOutputStream(new File(path));
         ObjectOutputStream oi = new ObjectOutputStream(fi);
         System.out.println(0);
         for(Object x :obj){
@@ -22,7 +22,7 @@ public class Main implements Serializable {
 
     public static void readObjTab(String fileName) throws IOException,ClassNotFoundException{
 
-        FileInputStream fi = new FileInputStream(fileName);
+        FileInputStream fi = new FileInputStream(fileName+".obj");
         ObjectInputStream input = new ObjectInputStream(fi);
         ArrayList<Object> objectsList = new ArrayList<>();
         boolean cont = true;
@@ -67,8 +67,8 @@ public class Main implements Serializable {
         obiekty[3] = new Film("Mission impossible","Kama hama",1200,aktorzy);
 
         saveObjTab(obiekty);
-        String path = "C:\\Users\\kpstr\\OneDrive\\Desktop\\java\\myObjectsTab.obj";
-        readObjTab(path.replace("\\","/"));
+
+        readObjTab("myObjectsTab");
 
     }
 }
