@@ -1,15 +1,17 @@
 package zestawZadan3.zad6;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) throws  IOException {
+    public static void main(String[] args)  {
 
             Random rand = new Random();
+
+            try{
+
+
             RandomAccessFile file = new RandomAccessFile(new File("file.txt"),"rw");
 
             file.seek(0);
@@ -31,6 +33,13 @@ public class Main {
                 System.out.println(number);
 
             }
+
+            }catch (Exception e){
+
+                e.printStackTrace();
+
+            }
+
 
     }
 }

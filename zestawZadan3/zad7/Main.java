@@ -78,6 +78,8 @@ public class Main {
 
 
         newFile("tab.txt");
+        Change("tab.txt");
+        reverseChange("tab.txt");
 
     }
 }
